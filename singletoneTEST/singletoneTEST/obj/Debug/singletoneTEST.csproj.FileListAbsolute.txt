@@ -1,0 +1,6 @@
+D:\My_C#\singletoneTEST\singletoneTEST\bin\Debug\singletoneTEST.exe.config
+D:\My_C#\singletoneTEST\singletoneTEST\bin\Debug\singletoneTEST.exe
+D:\My_C#\singletoneTEST\singletoneTEST\bin\Debug\singletoneTEST.pdb
+D:\My_C#\singletoneTEST\singletoneTEST\obj\Debug\singletoneTEST.csproj.CoreCompileInputs.cache
+D:\My_C#\singletoneTEST\singletoneTEST\obj\Debug\singletoneTEST.exe
+D:\My_C#\singletoneTEST\singletoneTEST\obj\Debug\singletoneTEST.pdb
