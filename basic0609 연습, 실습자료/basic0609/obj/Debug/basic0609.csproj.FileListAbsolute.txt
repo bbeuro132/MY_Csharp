@@ -1,0 +1,7 @@
+D:\My_C#\basic0609\basic0609\bin\Debug\basic0609.exe.config
+D:\My_C#\basic0609\basic0609\bin\Debug\basic0609.exe
+D:\My_C#\basic0609\basic0609\bin\Debug\basic0609.pdb
+D:\My_C#\basic0609\basic0609\obj\Debug\basic0609.csproj.AssemblyReference.cache
+D:\My_C#\basic0609\basic0609\obj\Debug\basic0609.csproj.CoreCompileInputs.cache
+D:\My_C#\basic0609\basic0609\obj\Debug\basic0609.exe
+D:\My_C#\basic0609\basic0609\obj\Debug\basic0609.pdb
