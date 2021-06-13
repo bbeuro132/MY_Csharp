@@ -10,11 +10,12 @@ namespace singletoneTEST
     {
         static void Main(string[] args)
         {
-            var object1 = SingleTEST.getInstance().getData();
-            var object2 = SingleTEST.getInstance().getData();
-
-            Console.WriteLine("object1 : " + object1);
-            Console.WriteLine("object2 : " + object2);
+            Random r = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("싱글톤: " + SingleTEST.getInstance(r).getData());
+                Console.WriteLine("인스턴스: " + new SingleTEST(r).getData());
+            }
 
         }
     }
