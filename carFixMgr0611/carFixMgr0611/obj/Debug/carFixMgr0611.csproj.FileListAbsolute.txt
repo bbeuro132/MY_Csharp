@@ -1,0 +1,15 @@
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\carFixMgr0611.exe.config
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\carFixMgr0611.exe
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\carFixMgr0611.pdb
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\CxFlatUI.dll
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\MaterialSkin.dll
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\SunnyUI.Common.dll
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\bin\Debug\SunnyUI.dll
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.AssemblyReference.cache
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.Properties.Resources.resources
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.MainForm.resources
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.GenerateResource.cache
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.CoreCompileInputs.cache
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.csproj.CopyComplete
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.exe
+D:\Carol\CSHARP\carFixMgr0611\carFixMgr0611\obj\Debug\carFixMgr0611.pdb

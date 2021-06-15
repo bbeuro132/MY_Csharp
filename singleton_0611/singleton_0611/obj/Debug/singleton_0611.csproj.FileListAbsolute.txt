@@ -1,0 +1,7 @@
+D:\Carol\CSHARP\singleton_0611\singleton_0611\bin\Debug\singleton_0611.exe.config
+D:\Carol\CSHARP\singleton_0611\singleton_0611\bin\Debug\singleton_0611.exe
+D:\Carol\CSHARP\singleton_0611\singleton_0611\bin\Debug\singleton_0611.pdb
+D:\Carol\CSHARP\singleton_0611\singleton_0611\obj\Debug\singleton_0611.csproj.AssemblyReference.cache
+D:\Carol\CSHARP\singleton_0611\singleton_0611\obj\Debug\singleton_0611.csproj.CoreCompileInputs.cache
+D:\Carol\CSHARP\singleton_0611\singleton_0611\obj\Debug\singleton_0611.exe
+D:\Carol\CSHARP\singleton_0611\singleton_0611\obj\Debug\singleton_0611.pdb
