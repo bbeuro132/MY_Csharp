@@ -57,7 +57,7 @@ namespace carFixMgr0611
             this.custInfoAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.custInfoAdd.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.custInfoAdd.Font = new System.Drawing.Font("휴먼모음T", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.custInfoAdd.Location = new System.Drawing.Point(671, 100);
+            this.custInfoAdd.Location = new System.Drawing.Point(641, 89);
             this.custInfoAdd.MinimumSize = new System.Drawing.Size(1, 1);
             this.custInfoAdd.Name = "custInfoAdd";
             this.custInfoAdd.Size = new System.Drawing.Size(218, 57);
@@ -94,7 +94,7 @@ namespace carFixMgr0611
             this.custFixView.BackColor = System.Drawing.Color.Transparent;
             this.custFixView.ButtonType = CxFlatUI.ButtonType.Success;
             this.custFixView.Font = new System.Drawing.Font("휴먼모음T", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.custFixView.Location = new System.Drawing.Point(656, 208);
+            this.custFixView.Location = new System.Drawing.Point(623, 184);
             this.custFixView.Name = "custFixView";
             this.custFixView.Size = new System.Drawing.Size(251, 70);
             this.custFixView.TabIndex = 4;
@@ -108,7 +108,7 @@ namespace carFixMgr0611
             this.custFixAdmin.ButtonType = CxFlatUI.ButtonType.Waring;
             this.custFixAdmin.Font = new System.Drawing.Font("휴먼모음T", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.custFixAdmin.ForeColor = System.Drawing.Color.Black;
-            this.custFixAdmin.Location = new System.Drawing.Point(592, 307);
+            this.custFixAdmin.Location = new System.Drawing.Point(623, 383);
             this.custFixAdmin.Name = "custFixAdmin";
             this.custFixAdmin.Size = new System.Drawing.Size(251, 70);
             this.custFixAdmin.TabIndex = 5;
@@ -121,7 +121,7 @@ namespace carFixMgr0611
             this.custRandData.BackColor = System.Drawing.Color.Transparent;
             this.custRandData.ButtonType = CxFlatUI.ButtonType.Primary;
             this.custRandData.Font = new System.Drawing.Font("휴먼모음T", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.custRandData.Location = new System.Drawing.Point(671, 408);
+            this.custRandData.Location = new System.Drawing.Point(623, 282);
             this.custRandData.Name = "custRandData";
             this.custRandData.Size = new System.Drawing.Size(251, 70);
             this.custRandData.TabIndex = 6;
@@ -134,7 +134,7 @@ namespace carFixMgr0611
             this.custAppInfo.BackColor = System.Drawing.Color.Transparent;
             this.custAppInfo.ButtonType = CxFlatUI.ButtonType.Primary;
             this.custAppInfo.Font = new System.Drawing.Font("휴먼모음T", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.custAppInfo.Location = new System.Drawing.Point(613, 506);
+            this.custAppInfo.Location = new System.Drawing.Point(623, 482);
             this.custAppInfo.Name = "custAppInfo";
             this.custAppInfo.Size = new System.Drawing.Size(251, 70);
             this.custAppInfo.TabIndex = 7;
@@ -146,15 +146,15 @@ namespace carFixMgr0611
             // 
             this.uiSymbolLabel1.BackColor = System.Drawing.Color.Transparent;
             this.uiSymbolLabel1.Font = new System.Drawing.Font("휴먼모음T", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.uiSymbolLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.uiSymbolLabel1.Location = new System.Drawing.Point(12, 8);
+            this.uiSymbolLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel1.Location = new System.Drawing.Point(12, 12);
             this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSymbolLabel1.Name = "uiSymbolLabel1";
             this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.uiSymbolLabel1.Size = new System.Drawing.Size(267, 38);
+            this.uiSymbolLabel1.Size = new System.Drawing.Size(233, 38);
             this.uiSymbolLabel1.Style = Sunny.UI.UIStyle.Custom;
             this.uiSymbolLabel1.Symbol = 61881;
-            this.uiSymbolLabel1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.uiSymbolLabel1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiSymbolLabel1.SymbolSize = 36;
             this.uiSymbolLabel1.TabIndex = 8;
             this.uiSymbolLabel1.Text = "카센터 관리 앱 v1.0";

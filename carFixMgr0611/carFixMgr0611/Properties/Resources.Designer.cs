@@ -59,5 +59,23 @@ namespace carFixMgr0611.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   올바른 이름 자리수를 입력하세요과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ERR_NAME_SIZE {
+            get {
+                return ResourceManager.GetString("ERR_NAME_SIZE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   올바른 이름을 입력하세요과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ERR_NAME_WRONG {
+            get {
+                return ResourceManager.GetString("ERR_NAME_WRONG", resourceCulture);
+            }
+        }
     }
 }
