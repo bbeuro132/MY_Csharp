@@ -1,0 +1,10 @@
+C:\Users\KB\source\repos\ClassGrade\bin\Debug\ClassGrade.exe.config
+C:\Users\KB\source\repos\ClassGrade\bin\Debug\ClassGrade.exe
+C:\Users\KB\source\repos\ClassGrade\bin\Debug\ClassGrade.pdb
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.csprojAssemblyReference.cache
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.Form1.resources
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.Properties.Resources.resources
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.csproj.GenerateResource.cache
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.csproj.CoreCompileInputs.cache
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.exe
+C:\Users\KB\source\repos\ClassGrade\obj\Debug\ClassGrade.pdb

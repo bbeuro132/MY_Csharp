@@ -1,0 +1,10 @@
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\ClassGrade.Form1.resources
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.csproj.GenerateResource.cache
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.csproj.CoreCompileInputs.cache
+C:\Users\KB\source\repos\GameSellSimulator\bin\Debug\GameSellSimulator.exe.config
+C:\Users\KB\source\repos\GameSellSimulator\bin\Debug\GameSellSimulator.exe
+C:\Users\KB\source\repos\GameSellSimulator\bin\Debug\GameSellSimulator.pdb
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.Properties.Resources.resources
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.exe
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.pdb
+C:\Users\KB\source\repos\GameSellSimulator\obj\Debug\GameSellSimulator.csprojAssemblyReference.cache

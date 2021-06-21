@@ -1,0 +1,37 @@
+<products>
+<product>
+  <title>철권4</title>
+  <model>PS4</model>
+  <genre>대전격투</genre>
+  <price>10960</price>
+  <stock>12</stock>
+</product>
+<product>
+  <title>GTA 5</title>
+  <model>PS4</model>
+  <genre>액션</genre>
+  <price>16700</price>
+  <stock>8</stock>
+</product>
+<product>
+  <title>Dark Souls 3</title>
+  <model>PS4, PC</model>
+  <genre>액션, RPG</genre>
+  <price>64800</price>
+  <stock>23</stock>
+</product>
+<product>
+  <title>Demon's soul remake</title>
+  <model>PS5</model>
+  <genre>액션, RPG</genre>
+  <price>102600</price>
+  <stock>30</stock>
+</product>
+<product>
+  <title>Metro Exodus</title>
+  <model>PS4</model>
+  <genre>FPS</genre>
+  <price>29640</price>
+  <stock>3</stock>
+</product>
+</products>
