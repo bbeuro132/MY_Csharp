@@ -38,6 +38,7 @@ namespace carFixMgr0611
             this.custRandData = new CxFlatUI.CxFlatRoundButton();
             this.custAppInfo = new CxFlatUI.CxFlatRoundButton();
             this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,6 +194,7 @@ namespace carFixMgr0611
         private CxFlatUI.CxFlatRoundButton custRandData;
         private CxFlatUI.CxFlatRoundButton custAppInfo;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

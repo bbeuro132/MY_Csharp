@@ -106,12 +106,14 @@ namespace carFixMgr0611.ui
                     return;
                 }
             }
+            int sum = 0;
 
             for (int i = RepairTable.ENGINE_OIL; i < RepairTable.ETC_COST+1; i++)
             {
                 if (checkbox[i].Checked)
                 {
                     repairItems.Add(new RepairItem(i, checkbox[i].Text, RepairTable.fixMoney[i]));
+                    sum += RepairTable.fixMoney[i];
                 }
             }
 
@@ -154,9 +156,13 @@ namespace carFixMgr0611.ui
             adapter.addReceipt(new Receipt(new Customer(Name, (telH+telB), (CustYear+CustMonth+CustDay)),
                                                         new Car(Model, Num, CC, Year),
                                                         DateTime.Now.ToString("yyyy년MM월dd일"),
-                                                        Staff, repairItems));
+                                                        Staff, repairItems, sum));
+
+            //adapter.viewReceipt();
 
             adapter.viewReceipt();
+
+            adapter.addReceiptDb();
 
             #region 쓰레기통
             /*
