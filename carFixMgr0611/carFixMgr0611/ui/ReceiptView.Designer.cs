@@ -38,11 +38,15 @@ namespace carFixMgr0611.ui
             this.L_indate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.L_TotalPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.L_StaffName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.L_CarNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.L_CustName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.viewGrid = new Sunny.UI.UIDataGridView();
+            this.gCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gRepair = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
-            this.viewSearch = new Sunny.UI.UIComboBox();
-            this.cxFlatTextBox1 = new CxFlatUI.CxFlatTextBox();
+            this.viewSelect = new Sunny.UI.UIComboBox();
+            this.viewSearch = new CxFlatUI.CxFlatTextBox();
             this.vSearchItem = new Sunny.UI.UISymbolButton();
             this.vSearchAll = new Sunny.UI.UISymbolButton();
             this.vDelete = new Sunny.UI.UISymbolButton();
@@ -51,9 +55,6 @@ namespace carFixMgr0611.ui
             this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             this.closeButton = new Sunny.UI.UISymbolButton();
             this.uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
-            this.gCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gRepair = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.viewGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@ namespace carFixMgr0611.ui
             this.L_indate,
             this.L_TotalPrice,
             this.L_StaffName,
+            this.L_CarNum,
             this.L_CustName});
             this.viewList.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.viewList.FullRowSelect = true;
@@ -94,6 +96,11 @@ namespace carFixMgr0611.ui
             // 
             this.L_StaffName.Text = "담당자";
             this.L_StaffName.Width = 110;
+            // 
+            // L_CarNum
+            // 
+            this.L_CarNum.Text = "차량번호";
+            this.L_CarNum.Width = 97;
             // 
             // L_CustName
             // 
@@ -141,6 +148,21 @@ namespace carFixMgr0611.ui
             this.viewGrid.Size = new System.Drawing.Size(776, 207);
             this.viewGrid.TabIndex = 1;
             // 
+            // gCount
+            // 
+            this.gCount.HeaderText = "번호";
+            this.gCount.Name = "gCount";
+            // 
+            // gRepair
+            // 
+            this.gRepair.HeaderText = "수리항목";
+            this.gRepair.Name = "gRepair";
+            // 
+            // gPrice
+            // 
+            this.gPrice.HeaderText = "수리비용";
+            this.gPrice.Name = "gPrice";
+            // 
             // uiSymbolLabel1
             // 
             this.uiSymbolLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
@@ -152,37 +174,40 @@ namespace carFixMgr0611.ui
             this.uiSymbolLabel1.TabIndex = 2;
             this.uiSymbolLabel1.Text = "검색항목";
             // 
+            // viewSelect
+            // 
+            this.viewSelect.FillColor = System.Drawing.Color.White;
+            this.viewSelect.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.viewSelect.Items.AddRange(new object[] {
+            "고객명",
+            "차량번호"});
+            this.viewSelect.Location = new System.Drawing.Point(166, 82);
+            this.viewSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.viewSelect.MinimumSize = new System.Drawing.Size(63, 0);
+            this.viewSelect.Name = "viewSelect";
+            this.viewSelect.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.viewSelect.Size = new System.Drawing.Size(150, 29);
+            this.viewSelect.TabIndex = 3;
+            this.viewSelect.Text = "검색항목 선택";
+            this.viewSelect.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // viewSearch
             // 
-            this.viewSearch.FillColor = System.Drawing.Color.White;
-            this.viewSearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.viewSearch.Location = new System.Drawing.Point(166, 82);
-            this.viewSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.viewSearch.MinimumSize = new System.Drawing.Size(63, 0);
+            this.viewSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.viewSearch.Hint = "검색어 입력";
+            this.viewSearch.Location = new System.Drawing.Point(324, 82);
+            this.viewSearch.MaxLength = 32767;
+            this.viewSearch.Multiline = false;
             this.viewSearch.Name = "viewSearch";
-            this.viewSearch.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.viewSearch.Size = new System.Drawing.Size(150, 29);
-            this.viewSearch.TabIndex = 3;
-            this.viewSearch.Text = "검색항목 선택";
-            this.viewSearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cxFlatTextBox1
-            // 
-            this.cxFlatTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cxFlatTextBox1.Hint = "검색어 입력";
-            this.cxFlatTextBox1.Location = new System.Drawing.Point(324, 82);
-            this.cxFlatTextBox1.MaxLength = 32767;
-            this.cxFlatTextBox1.Multiline = false;
-            this.cxFlatTextBox1.Name = "cxFlatTextBox1";
-            this.cxFlatTextBox1.PasswordChar = '\0';
-            this.cxFlatTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cxFlatTextBox1.SelectedText = "";
-            this.cxFlatTextBox1.SelectionLength = 0;
-            this.cxFlatTextBox1.SelectionStart = 0;
-            this.cxFlatTextBox1.Size = new System.Drawing.Size(211, 38);
-            this.cxFlatTextBox1.TabIndex = 4;
-            this.cxFlatTextBox1.TabStop = false;
-            this.cxFlatTextBox1.UseSystemPasswordChar = false;
+            this.viewSearch.PasswordChar = '\0';
+            this.viewSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.viewSearch.SelectedText = "";
+            this.viewSearch.SelectionLength = 0;
+            this.viewSearch.SelectionStart = 0;
+            this.viewSearch.Size = new System.Drawing.Size(211, 38);
+            this.viewSearch.TabIndex = 4;
+            this.viewSearch.TabStop = false;
+            this.viewSearch.UseSystemPasswordChar = false;
             // 
             // vSearchItem
             // 
@@ -194,6 +219,7 @@ namespace carFixMgr0611.ui
             this.vSearchItem.Size = new System.Drawing.Size(91, 35);
             this.vSearchItem.TabIndex = 5;
             this.vSearchItem.Text = "검색";
+            this.vSearchItem.Click += new System.EventHandler(this.vSearchItem_Click);
             // 
             // vSearchAll
             // 
@@ -205,6 +231,7 @@ namespace carFixMgr0611.ui
             this.vSearchAll.Size = new System.Drawing.Size(135, 35);
             this.vSearchAll.TabIndex = 6;
             this.vSearchAll.Text = "전체 검색";
+            this.vSearchAll.Click += new System.EventHandler(this.vSearchAll_Click);
             // 
             // vDelete
             // 
@@ -290,21 +317,6 @@ namespace carFixMgr0611.ui
             this.uiSymbolLabel3.TabIndex = 12;
             this.uiSymbolLabel3.Text = "고객 정보 등록";
             // 
-            // gCount
-            // 
-            this.gCount.HeaderText = "번호";
-            this.gCount.Name = "gCount";
-            // 
-            // gRepair
-            // 
-            this.gRepair.HeaderText = "수리항목";
-            this.gRepair.Name = "gRepair";
-            // 
-            // gPrice
-            // 
-            this.gPrice.HeaderText = "수리비용";
-            this.gPrice.Name = "gPrice";
-            // 
             // ReceiptView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -319,8 +331,8 @@ namespace carFixMgr0611.ui
             this.Controls.Add(this.vConfirm);
             this.Controls.Add(this.vSearchAll);
             this.Controls.Add(this.vSearchItem);
-            this.Controls.Add(this.cxFlatTextBox1);
             this.Controls.Add(this.viewSearch);
+            this.Controls.Add(this.viewSelect);
             this.Controls.Add(this.uiSymbolLabel1);
             this.Controls.Add(this.viewGrid);
             this.Controls.Add(this.viewList);
@@ -337,8 +349,8 @@ namespace carFixMgr0611.ui
         private System.Windows.Forms.ListView viewList;
         private Sunny.UI.UIDataGridView viewGrid;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
-        private Sunny.UI.UIComboBox viewSearch;
-        private CxFlatUI.CxFlatTextBox cxFlatTextBox1;
+        private Sunny.UI.UIComboBox viewSelect;
+        private CxFlatUI.CxFlatTextBox viewSearch;
         private Sunny.UI.UISymbolButton vSearchItem;
         private Sunny.UI.UISymbolButton vSearchAll;
         private Sunny.UI.UISymbolButton vDelete;
@@ -355,5 +367,6 @@ namespace carFixMgr0611.ui
         private System.Windows.Forms.DataGridViewTextBoxColumn gCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn gRepair;
         private System.Windows.Forms.DataGridViewTextBoxColumn gPrice;
+        private System.Windows.Forms.ColumnHeader L_CarNum;
     }
 }

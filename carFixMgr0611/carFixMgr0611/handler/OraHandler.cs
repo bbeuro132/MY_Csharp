@@ -243,6 +243,97 @@ namespace carFixMgr0611.handler
             return list;
         }
 
+        public List<ReceiptVO> getReceiptVO()
+        {
+            string query = 
+                "create or replace view receipt_view as " +
+                "select receipt_id as 접수ID, " +
+                "indate as 접수일, " +
+                "total_price as 총결제금액, " +
+                "(select customer_t.name from customer_t where " +
+                "customer_t.cust_id = receipt_t.cust_id) as 고객명, " +
+                "(select staff_t.name from staff_t where " +
+                "staff_t.staff_id = receipt_t.staff_id) as 담당자, " +
+                "(select car_t.num from car_t where " +
+                "car_t.car_id = receipt_t.cust_id) as 차량번호 " +
+                "from receipt_t";
+
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+
+            string query2 =
+                "select * from receipt_view " +
+                "order by 접수ID desc";
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            List<ReceiptVO> list = new List<ReceiptVO>();
+
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    ReceiptVO receiptVo =
+                        new ReceiptVO(dr["접수일"].ToString(),
+                                      Convert.ToInt32(dr["총결제금액"]),
+                                      dr["고객명"].ToString(),
+                                      dr["담당자"].ToString(),
+                                      Convert.ToInt32(dr["접수ID"].ToString()),
+                                      dr["차량번호"].ToString());
+                    list.Add(receiptVo);
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+            }
+
+            dr.Close();
+            return list;
+        }
+
+        public List<ReceiptVO> getReceiptVoBySearch(
+            string searchItem, string searchValue)
+        {
+            string query2 = string.Format(
+                    "select * from receipt_view " +
+                    "where {0} = '{1}'",
+                    searchItem, searchValue);
+
+            cmd.Connection = conn;
+            cmd.CommandText = query2;
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            int count = 1;
+            List<ReceiptVO> list = new List<ReceiptVO>();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    ReceiptVO receiptVo =
+                        new ReceiptVO(dr["indate"].ToString(),
+                                      Convert.ToInt32(dr["total_price"]),
+                                      dr["cust_name"].ToString(),
+                                      dr["staff_name"].ToString(),
+                                      Convert.ToInt32(
+                                          dr["receipt_id"].ToString()),
+                                      dr["car_num"].ToString());
+                    list.Add(receiptVo);
+                    count++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("데이터가 존재하지 않습니다.");
+            }
+
+            dr.Close();
+            return list;
+        }
+
         public List<RepairItem> getRepairItem(string name)
         {
 

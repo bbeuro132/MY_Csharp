@@ -17,10 +17,11 @@ namespace carFixMgr0611.ui
     partial class ReceiptView : MaterialForm
     {
         ReceiptAdapter adapter;
-
+        List<ReceiptVO> receiptList;
         public ReceiptView()
         {
             InitializeComponent();
+
         }
 
         public ReceiptView(ReceiptAdapter adapter)
@@ -32,6 +33,16 @@ namespace carFixMgr0611.ui
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void ReceiptView_Load(object sender, EventArgs e)
+        {
+            CommUtil.colorListViewHeader(ref viewList, Color.LightSlateGray,
+                                        Color.BlanchedAlmond);
+
+            List<ReceiptVO> list = adapter.getReceiptVoDb();
+            initList(list);
+            initGrid();
         }
 
         public void initList() //ViewList에 표시되기 위한 내용이 담김, 디폴트 값
@@ -66,10 +77,15 @@ namespace carFixMgr0611.ui
                         list[i].Indate,
                         strPrice,
                         list[i].StaffName,
+                        list[i].CarNum,
                         list[i].CustName
                     }));
             }
             CommUtil.setRowColor(viewList, Color.LightSalmon, Color.LightBlue);
+            int index = viewList.Items.Count - 1;
+            viewList.Items[index].Selected = true;
+            viewList.Items[index].Focused = true;
+            viewList.EnsureVisible(index);
         }
 
         public void initGrid()
@@ -101,25 +117,20 @@ namespace carFixMgr0611.ui
                 viewGrid.Rows.Add(new ListViewItem(
                     new string[]
                     {
-                        (i+1).ToString(),
+                        (i+1).ToString(), 
                         list[i].Repair,
-                        list[i].Price.ToString()
+                        strPrice
                     }
                     ));
             }
+            int count = viewGrid.Rows.Count - 1;
+            viewGrid.FirstDisplayedScrollingRowIndex = count;
+            viewGrid.CurrentCell =
+                viewGrid.Rows[count - 1].Cells[0];
         }
 
 
-        private void ReceiptView_Load(object sender, EventArgs e)
-        {
-            CommUtil.colorListViewHeader(ref viewList, Color.LightSlateGray, 
-                                        Color.BlanchedAlmond);
 
-            List<ReceiptVO> list = adapter.getReceiptDb();
-            List<RepairItem> RepairList = adapter.GetRepairItemsDb();
-            initList(list);
-            initGrid(RepairList);
-        }
 
         private void viewList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -130,28 +141,62 @@ namespace carFixMgr0611.ui
                 string date = viewList.Items[n].SubItems[1].Text;
                 string price = viewList.Items[n].SubItems[2].Text;
                 string staff = viewList.Items[n].SubItems[3].Text;
-                string cust = viewList.Items[n].SubItems[4].Text;
+                string carNum = viewList.Items[n].SubItems[4].Text;
+                string cust = viewList.Items[n].SubItems[5].Text;
 
 
                 Console.WriteLine("번호 : " + num);
                 Console.WriteLine("접수날짜 : " + date);
                 Console.WriteLine("총결제금액 : " + price);
                 Console.WriteLine("담당자 : " + staff);
+                Console.WriteLine("차량번호 : " + carNum);
                 Console.WriteLine("고객명 : " + cust);
 
                 List<RepairItem> list = adapter.GetRepairItemsDb(cust);
 
+                viewGrid.ClearRows();
+                initGrid(list);
+
                 for (int i = 0; i < list.Count; i++)
                 {
-
                     Console.WriteLine("수리항목 : " + list[i].Repair);
                     Console.WriteLine("수리비 : " + list[i].Price);
-                    Console.WriteLine();
                 }
 
             }
         }
-    
-        
+
+        private void vSearchItem_Click(object sender, EventArgs e)
+        {
+            string item = viewSelect.Text;
+            string value = viewSearch.Text;
+            if (item.Equals("") || item.Equals("검색항목 선택") ||
+                value.Equals(""))
+            {
+                MessageBox.Show("정확한 검색어을 입력하세요");
+                return;
+            }
+            else
+            {
+                switch (item)
+                {
+                    case "고객명":
+                        item = "cust_name";
+                        break;
+                    case "차량번호":
+                        item = "car_num";
+                        break;
+                }
+            }
+            List<ReceiptVO> list =
+                adapter.getReceiptDbBySearch(item, value);
+            viewList.Items.Clear();
+            initList(list);
+        }
+
+        private void vSearchAll_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
