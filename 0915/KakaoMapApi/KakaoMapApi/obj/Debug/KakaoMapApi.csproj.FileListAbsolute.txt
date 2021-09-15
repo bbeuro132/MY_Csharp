@@ -1,0 +1,10 @@
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\bin\Debug\KakaoMapApi.exe.config
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\bin\Debug\KakaoMapApi.exe
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\bin\Debug\KakaoMapApi.pdb
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.csprojAssemblyReference.cache
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.Form1.resources
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.Properties.Resources.resources
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.csproj.GenerateResource.cache
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.csproj.CoreCompileInputs.cache
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.exe
+D:\Lee-C#\KakaoMapApi\KakaoMapApi\obj\Debug\KakaoMapApi.pdb

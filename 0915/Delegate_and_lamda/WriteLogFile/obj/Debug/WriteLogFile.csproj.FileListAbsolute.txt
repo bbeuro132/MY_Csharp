@@ -1,0 +1,10 @@
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\bin\Debug\WriteLogFile.exe.config
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\bin\Debug\WriteLogFile.exe
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\bin\Debug\WriteLogFile.pdb
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.csprojAssemblyReference.cache
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.Form1.resources
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.Properties.Resources.resources
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.csproj.GenerateResource.cache
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.csproj.CoreCompileInputs.cache
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.exe
+D:\Lee-C#\Delegate_and_lamda\WriteLogFile\obj\Debug\WriteLogFile.pdb

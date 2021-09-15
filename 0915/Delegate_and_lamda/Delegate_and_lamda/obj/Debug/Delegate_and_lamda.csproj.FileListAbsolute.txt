@@ -1,0 +1,11 @@
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\bin\Debug\Delegate_and_lamda.exe.config
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\bin\Debug\Delegate_and_lamda.exe
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\bin\Debug\Delegate_and_lamda.pdb
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.csprojAssemblyReference.cache
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.Properties.Resources.resources
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.csproj.GenerateResource.cache
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.csproj.CoreCompileInputs.cache
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.exe
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.pdb
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.Form1.resources
+D:\Lee-C#\Delegate_and_lamda\Delegate_and_lamda\obj\Debug\Delegate_and_lamda.Form2.resources

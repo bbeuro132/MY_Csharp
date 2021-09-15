@@ -1,0 +1,11 @@
+D:\Lee-C#\ReadAPI\ReadAPI\bin\Debug\ReadAPI.exe.config
+D:\Lee-C#\ReadAPI\ReadAPI\bin\Debug\ReadAPI.exe
+D:\Lee-C#\ReadAPI\ReadAPI\bin\Debug\ReadAPI.pdb
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.Form1.resources
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.Properties.Resources.resources
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.csproj.GenerateResource.cache
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.csproj.CoreCompileInputs.cache
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.exe
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.pdb
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.csprojAssemblyReference.cache
+D:\Lee-C#\ReadAPI\ReadAPI\obj\Debug\ReadAPI.Form2.resources
